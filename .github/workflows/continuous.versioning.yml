@@ -8,6 +8,8 @@ on:
 
 jobs:
   version-main-branch-changes:
+    permissions:
+      contents: write
     runs-on: ubuntu-latest
     steps:
       - uses: actions/create-github-app-token@v2
